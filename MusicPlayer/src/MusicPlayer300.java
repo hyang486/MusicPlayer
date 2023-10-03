@@ -1,56 +1,15 @@
-//////////////// FILE HEADER (INCLUDE IN EVERY FILE) //////////////////////////
-//
-// Title: MusicPlayer - MusicPlayer300
-// Course: CS 300 Fall 2022
-//
-// Author: JeeYoun Jung
-// Email: jjung83@wisc.edu
-// Lecturer: Hobbes LeGault
-//
-//
-//////////////////// PAIR PROGRAMMERS COMPLETE THIS SECTION ///////////////////
-//
-// Partner Name: Hyeonmin Yang
-// Partner Email: hyang486@wisc.edu
-// Lecturer: Hobbes LeGault
-//
-// VERIFY THE FOLLOWING BY PLACING AN X NEXT TO EACH TRUE STATEMENT:
-// _x_ Write-up states that pair programming is allowed for this assignment.
-// _x_ We have both read and understand the course Pair Programming Policy.
-// _x_ We have registered our team prior to the team registration deadline.
-//
-///////////////////////// ALWAYS CREDIT OUTSIDE HELP //////////////////////////
-//
-// Persons: TA
-// Online Sources:
-//
-///////////////////////////////////////////////////////////////////////////////
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-/**
- * A linked-queue based music player which plays Actual Music Files based on keyboard input in an
- * interactive console method. This music player can load playlists of music or add individual song
- * files to the queue.
- * 
- * @author JeeYoun Jung, Hyeonmin Yang
- */
 public class MusicPlayer300 {
   private Playlist playlist; // The current playlist of Songs
   private boolean filterPlay; // Whether the current playback mode should be filtered by artist;
                               // false by default
   private String filterArtist; // The artist to play if filterPlay is true; should be null otherwise
 
-  /**
-   * Creates a new MusicPlayer300 with an empty playlist
-   * <p>
-   * 
-   * @param no parameter
-   * @return no return value
-   * 
-   */
+
   public MusicPlayer300() {
     filterPlay = false;
     filterArtist = null;
